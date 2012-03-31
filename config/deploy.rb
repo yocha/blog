@@ -9,7 +9,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:ryanb/#{application}.git"
+set :repository, "git@github.com:yocha/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
@@ -48,9 +48,4 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
-end
-                      end
-                end
-              end
-    end
 end
